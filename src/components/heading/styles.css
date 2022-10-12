@@ -1,5 +1,6 @@
-.span {
+.heading {
     @apply
     text-gray-100
+    font-bold
     font-sans
 }
