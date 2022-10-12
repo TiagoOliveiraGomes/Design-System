@@ -1,0 +1,36 @@
+.checkbox {
+    @apply
+    py-4
+    px-3
+    bg-cyan-500
+    rounded
+    font-semibold
+    text-black
+    text-sm
+    w-full
+    transition-colors
+    focus:ring-2 ring-white
+    hover:bg-cyan-300
+}
+
+.Checkbox-Icon{
+    @apply
+    w-5
+    h-5
+    text-cyan-500
+}
+.Checkbox-Root{
+    @apply
+    w-6
+    h-6
+    p-[2px]
+    bg-gray-800
+    rounded
+}
+
+.storybookDecorator-checkBox{
+    @apply
+    flex
+    items-center
+    gap-2
+}
