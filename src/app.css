@@ -34,3 +34,28 @@
     flex-col
     gap-3
 }
+
+.App > form > .remember{
+    @apply
+    flex
+    flex-row
+    items-center
+    gap-2
+    cursor-pointer
+}
+
+.App > footer{
+    @apply
+    flex
+    flex-col
+    items-center
+    gap-4
+    mt-8
+}
+
+.App > footer > .link{
+    @apply
+    text-gray-400
+    underline
+    hover:text-gray-200
+}
