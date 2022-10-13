@@ -7,7 +7,7 @@ on:
 
 jobs:
   build-and-deploy:
-    runs-on: ubunto-latest
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout
@@ -17,9 +17,9 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 16
-      
+
       - name: Install dependencies
-        run: yarn ci
+        run: yarn ci --legacy-peer-deps
 
       - name: Build Storybook
         run: yarn run build-storybook
