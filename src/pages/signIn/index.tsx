@@ -1,15 +1,24 @@
 import { Envelope } from 'phosphor-react'
-import React from 'react'
+import { FormEvent, useState } from 'react'
 import { Button } from '../../components/button'
 import { Checkbox } from '../../components/checkbox'
 import { Heading } from '../../components/heading'
 import { Logo } from '../../components/logo'
 import { Text } from '../../components/text'
 import { TextInput } from '../../components/textInput'
+import './styles.css'
 
 export function SignIn() {
+    const [isUserSignedIn, setIsUserSignedIn] = useState(false)
+
+    function handleSignIn (event: FormEvent) {
+        event.preventDefault()
+
+        setIsUserSignedIn(true)
+    }
+
   return (
-    <div className="App">
+    <div className="SignIn">
       <header className='header'>  
         <Logo />
 
@@ -22,7 +31,12 @@ export function SignIn() {
         </Text>
       </header>
 
-      <form action="" className='form'>
+      <form 
+      onSubmit={handleSignIn} 
+      action="" 
+      className='form'
+      >
+        {isUserSignedIn && <Text>Login Realizado!</Text>}
         <label htmlFor="email" className='label'>
           <Text className='font-semibold' >Endereço de e-mail</Text>
           <TextInput.Root>
