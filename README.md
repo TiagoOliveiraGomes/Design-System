@@ -51,4 +51,27 @@ ou
 $ yarn run dev
 ```
 
+# <h2>🚀 Como executar o Storybook</h2>
+Depois de realizar a instalação das dependências:
+
+# <h3>Iniciar o Storybook</h3>
+```javascript
+$ npm run storybook
+```
+ou
+
+```javascript
+$ yarn run storybook
+```
+
+# <h2>Como executar Testes</h2>
+```javascript
+$ npm run test-storybook
+```
+ou
+
+```javascript
+$ yarn run test-storybook
+```
+
 Feito com 🧡 by Tiago Gomes 👋🏻 
